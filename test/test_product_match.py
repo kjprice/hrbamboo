@@ -27,4 +27,7 @@ class TestProductMatch(TestCase):
         self.assertEqual(match_product([2, 4, 7]), 5)
         self.assertEqual(match_product([3, 10]), 17)
         self.assertEqual(match_product([10, 5, 6]), 19)
+        self.assertEqual(match_product([200, 201, 202, 203]), 13399)
+        self.assertEqual(match_product([3, 200]), 397)
+        self.assertEqual(match_product([3, 20]), 37)
         
