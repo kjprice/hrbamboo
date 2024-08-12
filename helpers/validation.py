@@ -1,4 +1,6 @@
 from typing import Iterable, List
+
+
 class ProductException(Exception):
     pass
 

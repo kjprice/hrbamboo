@@ -1,5 +1,5 @@
 from product_match import match_product
-from helpers.validation import _are_any_odd_indivisible, ProductException
+from helpers.validation import ProductException
 
 from unittest import TestCase
 
