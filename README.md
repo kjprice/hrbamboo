@@ -28,7 +28,11 @@ We also found there are some sets of `product supplies` where we will never have
 ### To run
 
 ```
+# Run command to see help
 ./product_match.py
+
+# Run command with two supplies (7 and 3)
+./product_match.py 7 3
 ```
 
 ### To test
