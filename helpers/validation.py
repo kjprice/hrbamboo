@@ -43,9 +43,6 @@ def can_answer_be_found(product_supplies: List[int]) -> bool:
     # If any number is 1, impossible
     if [num for num in product_supplies if num == 1]:
         return False
-    # If only one number exists
-    if len(product_supplies) == 1:
-        return False
     # If all numbers are even, impossible
     if _are_all_even(product_supplies):
         return False
@@ -56,6 +53,8 @@ def can_answer_be_found(product_supplies: List[int]) -> bool:
     return True
 
 def prevalidation(nums: List[int]) -> None:
+    if len(nums) < 2:
+        raise ProductException("Must have at least two products")
     for num in nums:
         if num < 1:
             raise ProductException("All products must be positive")
