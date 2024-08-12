@@ -2,6 +2,7 @@
 
 from typing import List
 from helpers.validation import abs_diff, can_answer_be_found, prevalidation
+from helpers.purchasable_products import find_largest_order_volume_not_perfectly_purchasable
 
 
 def match_product(product_supplies: List[int]) -> int:
@@ -15,4 +16,4 @@ def match_product(product_supplies: List[int]) -> int:
         return min(product_supplies) - 1
 
     # TODO: Test [10, 5, 6]
-    return sum(product_supplies) + 1
+    return find_largest_order_volume_not_perfectly_purchasable(product_supplies)
