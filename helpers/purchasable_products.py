@@ -5,17 +5,15 @@ def _get_numbers_less_than_max(nums: List[int], max_number: int) -> List[int]:
     output = nums.copy()
     nums_added = set()
     i = 0
-    while i < max_number:
+    while i < len(output):
         num = output[i]
         for curr in nums:
             add = curr + num
-            if not add in nums_added:
+            if (add < max_number) and (not add in nums_added):
                 nums_added.add(add)
                 output.append(add)
         i += 1
     output.sort()
-    while output[-1] >= max_number:
-        output.pop()
     return output
 
 

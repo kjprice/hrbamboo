@@ -19,4 +19,8 @@ class TestPurchasableProducts(TestCase):
         self.assertEqual(find_largest_order_volume_not_perfectly_purchasable([3, 5]), 7)
         self.assertEqual(find_largest_order_volume_not_perfectly_purchasable([3, 7]), 11)
         self.assertEqual(find_largest_order_volume_not_perfectly_purchasable([4, 7]), 17)
+        self.assertEqual(find_largest_order_volume_not_perfectly_purchasable([2, 4, 7]), 5)
+        self.assertEqual(find_largest_order_volume_not_perfectly_purchasable([2, 4, 7]), 5)
+        self.assertEqual(find_largest_order_volume_not_perfectly_purchasable([3, 10]), 17)
         
+print(_create_list_of_perfectly_purchasble_products([3, 10]))
