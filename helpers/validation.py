@@ -16,9 +16,6 @@ def _even_count(nums: List[int]) -> int:
 def _are_all_even(nums: List[int]) -> bool:
     return _even_count(nums) == len(nums)
 
-def abs_diff(num1: int, num2: int) -> int:
-    return abs(num2 - num1)
-
 def _is_divisible(num1: int, num2: int):
     return num1 % num2 == 0 or num2 % num1 == 0
 

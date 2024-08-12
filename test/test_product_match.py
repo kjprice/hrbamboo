@@ -16,7 +16,7 @@ class TestProductMatch(TestCase):
     def test_only_one_product(self):
         self.assertEqual(match_product([3]), -1)
     def test_diff_of_one(self):
-        self.assertEqual(match_product([3,4]), 2)
+        self.assertEqual(match_product([3,4]), 5)
 
     def test_find_largest_order_volume_not_perfectly_purchasable(self):
         self.assertEqual(match_product([2, 5]), 3)
@@ -26,4 +26,5 @@ class TestProductMatch(TestCase):
         self.assertEqual(match_product([2, 4, 7]), 5)
         self.assertEqual(match_product([2, 4, 7]), 5)
         self.assertEqual(match_product([3, 10]), 17)
+        self.assertEqual(match_product([10, 5, 6]), 19)
         
